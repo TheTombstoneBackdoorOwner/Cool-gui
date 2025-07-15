@@ -207,6 +207,8 @@ mainFrame.Position        = UDim2.new(0.5, -GUI_WIDTH/2, 0.5, -GUI_HEIGHT/2)
 mainFrame.BackgroundColor3= Color3.fromRGB(25, 5, 5)
 mainFrame.BorderSizePixel = 0
 mainFrame.Parent          = screenGui
+mainframe.Active = true
+mainframe.Draggable = true
 
 -- Tooltip
 local tooltip = Instance.new("TextLabel", screenGui)
@@ -224,9 +226,7 @@ local titleBar = Instance.new("Frame", mainFrame)
 titleBar.Name             = generate_string(math_random(1, 10))
 titleBar.Size             = UDim2.new(1,0,0,TITLE_HEIGHT)
 titleBar.BackgroundColor3 = Color3.fromRGB(60,0,0)
-titleBar.BorderSizePixel  = 0
-titleBar.Active = true
-titleBar.Draggable = true
+titleBar.BorderSizePi
 
 local titleLabel = Instance.new("TextLabel", titleBar)
 titleLabel.Size           = UDim2.new(1,-60,1,0)
